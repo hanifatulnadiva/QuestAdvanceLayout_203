@@ -69,7 +69,8 @@ fun ActivitasPertama(modifier: Modifier){
         }
         //card ke 2
         Card (modifier= Modifier
-            .fillMaxWidth(fraction= 1f)){
+            .fillMaxWidth(fraction= 1f)
+            .padding(all=12.dp)){
         }
         Box(
             modifier= Modifier
