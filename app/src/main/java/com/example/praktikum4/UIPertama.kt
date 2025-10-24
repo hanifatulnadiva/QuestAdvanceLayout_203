@@ -87,8 +87,10 @@ fun ActivitasPertama( modifier: Modifier){
                 Column (){
                     Text(text=stringResource(id=R.string.nama2),
                         fontSize = 30.sp,
-                        fontFamily = FontFamily.Cursive,
-                        color = Color.White)
+                        fontFamily = FontFamily.Serif,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White
+                    )
                 }
 
 
