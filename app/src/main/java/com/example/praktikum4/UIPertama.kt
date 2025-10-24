@@ -68,7 +68,8 @@ fun ActivitasPertama(modifier: Modifier){
             }
         }
         //card ke 2
-        Card {  }
+        Card (modifier= Modifier){
+        }
         Box(
             modifier= Modifier
             .fillMaxSize()
