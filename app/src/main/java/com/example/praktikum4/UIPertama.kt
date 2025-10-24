@@ -75,6 +75,7 @@ fun ActivitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.Blue
             )){
+            Row {  }
         }
         Box(
             modifier= Modifier
