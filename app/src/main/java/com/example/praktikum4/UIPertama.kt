@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -70,7 +71,10 @@ fun ActivitasPertama(modifier: Modifier){
         //card ke 2
         Card (modifier= Modifier
             .fillMaxWidth(fraction= 1f)
-            .padding(all=12.dp)){
+            .padding(all=12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )){
         }
         Box(
             modifier= Modifier
