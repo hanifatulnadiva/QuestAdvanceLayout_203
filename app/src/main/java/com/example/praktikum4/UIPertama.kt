@@ -20,6 +20,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
@@ -76,15 +77,16 @@ fun ActivitasPertama( modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.Blue
             )){
-            Row (){
-                val gambar = painterResource(id=R.drawable.logo_umy)
+            Row (verticalAlignment = Alignment.CenterVertically){
+                val gambar1 = painterResource(id=R.drawable.logo_umy)
                 Image(
-                    painter = gambar,
+                    painter = gambar1,
                     contentDescription = null,
                     modifier = Modifier.size(size = 100.dp).padding(all = 5.dp)
                 )
                 Spacer(modifier= Modifier.width(width = 30.dp))
-                Column (){
+                Column (modifier = Modifier
+                    .padding(top = 10.dp, bottom = 10.dp)){
                     Text(text=stringResource(id=R.string.nama2),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Serif,
@@ -112,12 +114,12 @@ fun ActivitasPertama( modifier: Modifier){
             .fillMaxWidth(fraction = 1f)
             .padding(all = 12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Green
+                containerColor = colorResource(id = R.color.hijau_tua)
             )){
-            Row() {
-                val gambar = painterResource(id = R.drawable.logo_umy)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                val gambar2 = painterResource(id = R.drawable.logo_umy)
                 Image(
-                    painter = gambar,
+                    painter = gambar2,
                     contentDescription = null,
                     modifier = Modifier.size(size = 100.dp).padding(all = 5.dp)
                 )
