@@ -1,5 +1,6 @@
 package com.example.praktikum4
 
+import android.media.Image
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -28,7 +29,7 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun ActivitasPertama(modifier: Modifier){
+fun ActivitasPertama( modifier: Modifier){
     Column(modifier= Modifier.padding(top = 100.dp)
         .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
@@ -77,6 +78,12 @@ fun ActivitasPertama(modifier: Modifier){
             )){
             Row (){
                 val gambar = painterResource(id=R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(size = 100.dp).padding(all = 5.dp)
+                )
+
 
             }
         }
